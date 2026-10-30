@@ -66,4 +66,4 @@ EOF
 
 echo
 echo "Restauración de prueba terminada. Para borrar el esquema de prueba:"
-echo "  echo \"ALTER SESSION SET CONTAINER=XEPDB1; DROP USER sistema_ventas_rest CASCADE;\" | sudo docker exec -i oracle-xe sqlplus -s / as sysdba"
+echo '  printf "ALTER SESSION SET CONTAINER=XEPDB1;\nDROP USER sistema_ventas_rest CASCADE;\n" | sudo docker exec -i oracle-xe sqlplus -s / as sysdba'
