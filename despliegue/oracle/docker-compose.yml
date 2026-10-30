@@ -1,0 +1,28 @@
+# Oracle Database 21c XE en un contenedor Docker.
+# Oracle no ofrece un instalador .deb para Ubuntu, por eso se usa Docker.
+# El puerto 1521 solo escucha en 127.0.0.1: la BD NO queda expuesta a Internet
+# (importante: Docker se salta las reglas de UFW si se publica en 0.0.0.0).
+
+services:
+  oracle:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: oracle-xe
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:1521:1521"
+    env_file:
+      - .env
+    environment:
+      TZ: America/Guatemala
+    volumes:
+      - oracle-datos:/opt/oracle/oradata          # datos persistentes
+      - ./respaldos:/opt/oracle/respaldos         # respaldos de Data Pump
+      - ./sql:/sql:ro                             # scripts SQL (solo lectura)
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+volumes:
+  oracle-datos:

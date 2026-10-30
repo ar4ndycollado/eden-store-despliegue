@@ -1,0 +1,16 @@
+# Archivos con contraseñas reales: solo existen en el servidor
+.env
+*.env
+config.py
+
+# Respaldos de la base de datos
+*.dmp
+respaldos/
+
+# Archivo de contexto local (no se entrega)
+instrucciones_del_proyecto_para_claude.md
+
+# Sistema operativo / editores
+.vscode/
+Thumbs.db
+.DS_Store

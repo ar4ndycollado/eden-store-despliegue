@@ -1,0 +1,18 @@
+# /etc/systemd/system/eden-store.service
+# Ejecuta la aplicación Flask con Gunicorn como servicio del sistema.
+[Unit]
+Description=Eden Store - Sistema de Ventas (Flask + Gunicorn)
+After=network.target oracle-xe.service
+Requires=oracle-xe.service
+
+[Service]
+User=edenapp
+Group=www-data
+WorkingDirectory=/opt/eden-store/app
+EnvironmentFile=/opt/eden-store/.env
+ExecStart=/opt/eden-store/venv/bin/gunicorn --workers 3 --bind 127.0.0.1:8000 --access-logfile - app:app
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
