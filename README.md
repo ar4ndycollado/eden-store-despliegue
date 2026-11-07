@@ -46,13 +46,13 @@ despliegue/
 
 ## Equipo y roles
 
-| Integrante | Rol | Rama |
-|---|---|---|
-| _(nombre)_ | 1. Administrador Linux | `feature/nombre-linux` |
-| _(nombre)_ | 2. Administrador Web | `feature/nombre-web` |
-| _(nombre)_ | 3. Desarrollador Backend | `feature/nombre-backend` |
-| _(nombre)_ | 4. Desarrollador Frontend | `feature/nombre-frontend` |
-| _(nombre)_ | 5. DevOps y Base de Datos | `feature/nombre-devops` |
+| Integrante | Rol | Rama | Documentación |
+|---|---|---|---|
+| Arandy Esduardo Collado Zapeta | Administrador Linux | `feature/arandy-linux` | [docs/01-administrador-linux.md](docs/01-administrador-linux.md) |
+| Carlos Francisco Contreras Morales | Administrador Web | `feature/carlos-web` | [docs/02-administrador-web.md](docs/02-administrador-web.md) |
+| Debora Raquel Tzoy Zapeta | Desarrolladora Backend | `feature/debora-backend` | [docs/03-backend.md](docs/03-backend.md) |
+| Beatriz Alejandra Us Cos | Desarrolladora Frontend | `feature/beatriz-frontend` | [docs/04-frontend.md](docs/04-frontend.md) |
+| Tomás Enrique Ordóñez Yat | DevOps y Base de Datos | `feature/tomas-devops` | [docs/05-devops-base-de-datos.md](docs/05-devops-base-de-datos.md) |
 
 ## Flujo de trabajo en Git
 
