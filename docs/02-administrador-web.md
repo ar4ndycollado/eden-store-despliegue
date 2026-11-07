@@ -32,3 +32,15 @@ El certificado se renueva solo con el temporizador certbot.timer.
 Problema resuelto
 Desde el celular la página daba «conexión rechazada»: el navegador forzaba HTTPS y todavía no había
 certificado. Al instalarlo con certbot, la página funcionó en todos los dispositivos.
+
+------
+
+## Comandos que explico en el video
+
+|Comando|Para qué sirve|
+|---|---|
+|`systemctl status nginx eden-store`|Ver si los servicios están activos y habilitados al arranque|
+|`sudo systemctl restart eden-store`|Reiniciar la aplicación después de un cambio|
+|`sudo ss -tlnp`|Ver los puertos abiertos: 22, 80 y 443 públicos; 8000 y 1521 solo en 127.0.0.1|
+|`journalctl -u eden-store -n 20`|Ver los últimos 20 registros de la aplicación (peticiones y errores)|
+|`sudo nginx -t`|Validar la configuración de Nginx antes de recargarla|
