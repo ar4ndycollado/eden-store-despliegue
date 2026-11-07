@@ -36,3 +36,12 @@ Para pantallas de hasta 768 px de ancho:
 - Celular: con datos móviles (fuera de la red local) para comprobar el acceso desde Internet.
 - Se probaron login, dashboard, lista de clientes y el formulario de nuevo cliente.
 - Para ver cambios de CSS en el celular se usa una pestaña de incógnito (por la caché de 7 días).
+
+
+  ## Comandos que explico en el video
+
+| Comando | Para qué sirve |
+|---|---|
+| `sudo find /opt/eden-store/app -name "*.css"` | Buscar archivos por nombre: encuentra la hoja de estilos |
+| `sudo nano /opt/eden-store/app/static/css/estilos.css` | Abrir un archivo en el editor de la terminal (guardar Ctrl+O, salir Ctrl+X) |
+| `sudo cp origen destino` | Copiar archivos; así se instalaron los scripts en /usr/local/bin |
