@@ -50,7 +50,7 @@ despliegue/
 |---|---|---|---|
 | Arandy Esduardo Collado Zapeta | Administrador Linux | `feature/arandy-linux` | [docs/01-administrador-linux.md](docs/01-administrador-linux.md) |
 | Carlos Francisco Contreras Morales | Administrador Web | `feature/carlos-web` | [docs/02-administrador-web.md](docs/02-administrador-web.md) |
-| Debora Raquel Tzoy Zapeta | Desarrolladora Backend | `feature/debora-backend` | [docs/03-backend.md](docs/03-backend.md) |
+| Debora Raquel Tzoy Zapeta | Desarrolladora Backend | `feature/debora-backe` | [docs/03-backend.md](docs/03-backend.md) |
 | Beatriz Alejandra Us Cos | Desarrolladora Frontend | `feature/beatriz-frontend` | [docs/04-frontend.md](docs/04-frontend.md) |
 | Tomás Enrique Ordóñez Yat | DevOps y Base de Datos | `feature/tomas-devops` | [docs/05-devops-base-de-datos.md](docs/05-devops-base-de-datos.md) |
 
